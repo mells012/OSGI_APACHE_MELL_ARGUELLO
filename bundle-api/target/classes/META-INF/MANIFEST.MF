@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1762991883642
+Build-Jdk-Spec: 23
+Bundle-ManifestVersion: 2
+Bundle-Name: bundle-api
+Bundle-SymbolicName: com.mell.osgi.bundle-api
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin 5.1.9
+Export-Package: com.mell.osgi.api;version="1.0.0"
+Import-Package: java.lang
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=11))"
+Tool: Bnd-6.3.1.202206071316

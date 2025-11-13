@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1762991897526
+Build-Jdk-Spec: 23
+Bundle-ManifestVersion: 2
+Bundle-Name: bundle-impl
+Bundle-SymbolicName: com.mell.osgi.bundle-impl
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin 5.1.9
+Import-Package: com.mell.osgi.api;version="[1.0,2)",java.lang,java.lang.
+ invoke
+Provide-Capability: osgi.service;objectClass:List<String>="com.mell.osgi
+ .api.GreetingService";uses:="com.mell.osgi.api"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
+ nt)(version>=1.5.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=Ja
+ vaSE)(version=11))"
+Service-Component: OSGI-INF/com.mell.osgi.impl.GreetingServiceImpl.xml
+Tool: Bnd-6.3.1.202206071316
